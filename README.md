@@ -8,6 +8,8 @@ Replicates core functionality of the Oura Ring using low-cost hardware and open-
 - MAX30102 PPG sensor (heart rate, SpO2)
 - MPU-6050 IMU (movement/accelerometer)
 - NTC Thermistor (skin temperature)
+- LiPo Battery 3.7V 500mAh (portable power)
+- Breadboard + jumper wires + resistors (prototyping)
 
 ## Software Stack
 - Firmware: C++ via PlatformIO
@@ -16,7 +18,7 @@ Replicates core functionality of the Oura Ring using low-cost hardware and open-
 - Visualization: Plotly
 
 ## Status
-🔧 Hardware on order — currently building software pipeline and validating on PhysioNet public sleep data.
+Hardware on order — currently building software pipeline and validating on PhysioNet public sleep data.
 
 ## Project Goals
 - Stream biometric data wirelessly from wrist to laptop via BLE
