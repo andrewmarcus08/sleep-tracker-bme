@@ -10,7 +10,7 @@ heartbeat = np.sin(2 * np.pi * 1.2 * time)  #simulating heartbeat of 72 beats pe
 noise = np.random.normal(0, 0.5, len(time))  # creates random data to simulate the noisy signals 
 noisy_signal = heartbeat + noise  # what the real sensor will send us 
 b,a = signal.butter(4, [low,high], btype='band')  #creating two arrays of numbers a and b of the signals between 0.5 and 3.0 Hz with a cutoff strength of 4 , the type band pass
-filtered = signal.filtfilt(b, a, noisy_signal)
+filtered = signal.filtfilt(b, a, noisy_signal) #takes the two arrays and the noisy signal data and runs the filter foward, then backwards to get rid of the time lag 
 plt.plot(time, noisy_signal, alpha=0.5, label="noisy signal")    #plots a noisy signal on y axis with transparency 0.5 
 plt.plot(time,heartbeat, alpha = 1 , label="clean heartbeat" )
 plt.plot(time,filtered, alpha = 1 , label = "filtered signal ")

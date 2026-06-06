@@ -7,8 +7,9 @@ noise = np.random.normal(0, 0.5, len(time))  # creates random data to simulate t
 noisy_signal = heartbeat + noise  # what the real sensor will send us 
 plt.plot(time, noisy_signal, alpha=0.5, label="noisy signal")    #plots a noisy signal on y axis with transparency 0.5 
 plt.plot(time,heartbeat, alpha = 1 , label="clean heartbeat" )
-plt.legend()
-plt.show()
+plt.legend() #shows the labels 
+plt.show() #shows the actual plot 
+
 
 
 
