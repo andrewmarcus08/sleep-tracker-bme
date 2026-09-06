@@ -21,7 +21,6 @@ Replicates core functionality of the Oura Ring using low-cost hardware and open-
 Hardware on order — currently building software pipeline and validating on PhysioNet public sleep data.
 
 ## Project Goals
-- Stream biometric data wirelessly from wrist to laptop via BLE
 - Extract HRV, movement score, and skin temperature per 30-second epoch
 - Generate clinically-comparable sleep hypnograms and a personalized sleep score
 
